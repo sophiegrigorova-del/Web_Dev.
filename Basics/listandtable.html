@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Lists and Tables in HTML </title>
+    </head>
+    <body> 
+ <h1> Lists and Tables in HTML </h1>
+ <h> There are two primary types of lists in HTML. The <strong>unorderd</strong> list (&lt;ul&gt;),which is used for collections when sequenced list does not matter, and the <strong> ordered list </strong> (&lt;ol&gt;) where the sequence does matter. </h>
+ 
+ <br>
+ <br> 
+
+ <p> Both of these lists use the element <strong> list item </strong> (&lt;li&gt;) for each item in the list.</p>
+
+<br>
+<h3> Unordered List</h3>
+
+<h> Dinners for the week</h>
+<br>
+ <ul>
+     <li> Hamburger Helper </li>
+    <li> Seafood </li>
+    <li> Chicken Alfredo </li>
+    <li> Tacos </li>
+    <li> Deli Sandwiches </li>
+</ul>
+<h3> Ordered Lists </h3>
+
+<h> My Morning Routine </h>
+<br>
+  <ol> 
+        <li> Wake Up </li>
+        <li> Brush Teeth </li>
+        <Li> Eat Breakfast </Li>
+        <li> Get Dressed </li>
+        <li> Head to School </li>
+   </ol>
+ <h2> Tables </h2>
+ 
+<p> Tables allow you to oraginze data in rows & columns. Semantically, "header" rows should be included in the &lt;head&gt; and the main section of the table should be in a &lt;body&gt; element.</p>
+<p> Notice that &lt;h&gt; elements automatically bold the content. These should be used for header cells. The &lt;caption&gt; element in a table gives a caption to the table which is displayed above the table by default. Each row is denoted by the &lt;tr&gt; element, with &lt;td&gt; and &lt;th&gt; elements residing within each row. </p>
+<br
+<p> One of the harder aspects to master in HTML Tables is the <em> rowspan,</em> which causes the cell to span vertically over rows, and the <em> colspan,</em> which causes the cell to span horizontally over columns.</p>
+<br>
+   
+ 
+    <table border="1">
+       <caption> Student Quiz Scores </caption>
+        <tr>
+        
+            <th> Student Name </th>
+             <th colspan="2">Quiz Scores</th>
+            <th>Average </th>
+        </tr>
+        <tr>
+            <th></th>
+           <th> Quiz 1 </th>
+           <th> Quiz 2 </th>
+           <th> </th>
+        </tr>
+        <tr>
+            <td> Alice </td>
+            <td> 88, 95</td>
+            <td>92, 89</td>
+            <td>91</td>
+        </tr>
+        <tr>
+            <td> Ben </td>
+            <td>76</td>
+            <td>81</td>
+            <td>79</td>
+        </tr>
+        <tr>
+            <td>Carla </td>
+            <td>93</td>
+            <td>95</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>Diego</td>
+            <td>84</td>
+            <td>78</td>
+            <td>81</td>
+        </tr>
+        <tr>
+            <td> Carla </td>
+            <td>90</td>
+            <td>87</td>
+            <td> 89</td>
+        </tr>
+    </table>
+
+
+
+
+    </body>
+</html>

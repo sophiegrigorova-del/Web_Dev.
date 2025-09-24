@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Card</title>
+
+        <style>
+
+            .cardscontainer{
+                display:flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+            .card{
+                width: 300px;
+                background-color: bisque;
+                padding: 15px;
+                border-radius: 16px;
+                box-shadow: 0 4px 8px #ccc;
+            }
+
+            .card .img{
+                width: 100%;
+                height: 150px;
+                background-color: darksalmon;
+                border-radius: 8px;
+                background-image: url("images/lab..jpeg");
+                background-size: cover;
+                background-position: center;
+                border-radius: 8px;
+            }
+
+            .card .drg {background-image: url("images/beagles.jpeg");}
+            .card.desc{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 12pt;
+                margin: 8px;
+            }
+
+            .card.cs{background-image: url("images/shiba.jpeg");}
+             .card.desc{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 12pt;
+                margin: 8px;
+
+            .card a:link,
+            .card a:active,
+            .card a:visited {
+                display:block;
+                background-color: aqua;
+                color: aliceblue;
+                padding: 12px;
+                border-radius: 8px;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+                text-decoration: none;
+            }
+
+
+            .card a:hover,
+            .card a:focus{
+                background-color: dimgrey;
+                color: violet;
+            }
+        </style>
+
+    </head>
+
+    <body> 
+        <h1> CUTE LITTLE PUPPIESSSS!</h1>
+
+        <div class="cardscontainer">
+   
+        <div class="card">
+            <div class="img gr1"></div>
+            <div class="desc">
+                <p>Labrador Retrievers are friendly, outgoing dogs who love people and water. Known for their loyalty and trainability, they’re excellent family pets, hunting companions, and service animals. Labs are high-energy dogs who thrive on play, exercise, and human interaction.</p>
+            </div>
+            <a href="#"> Read More</a>
+        </div>
+             
+        <div class="card">
+            <div class="img fbg"></div>
+            <div class="desc">
+                <p>Beagles are small, cheerful scent hounds known for their floppy ears, big brown eyes, and incredible sense of smell. They are great with kids, sociable with other pets, and love exploring the outdoors. Be prepared for some howling and a strong nose!</p>
+            </div>
+            <a href="#"> Read More</a>
+        </div>
+
+        <div class="card">
+            <div class="img fbg"></div>
+            <div class="desc">
+                <p>Pomeranians are tiny fluffballs with huge personalities. Despite their size, they are confident, alert, and curious. Their thick double coat requires regular grooming, and they enjoy short walks, games, and being the center of attention.</p>
+            </div>
+            <a href="#"> Read More</a>
+        </div>
+
+        <div class="card">
+            <div class="img cs"></div>
+            <div class="desc">
+                <p>Shiba Inus are independent, alert, and clean dogs originally from Japan. They have a fox-like appearance and are known for their spirited personality and unique vocalizations. They’re loyal but often prefer affection on their own terms.</p>
+            </div>
+            <a href="#"> Read More</a>
+        </div>
+
+        </div>
+    </body>
+</html>

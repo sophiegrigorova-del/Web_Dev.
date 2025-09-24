@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Floating Elements</title>
+
+        <style>
+            .floatImage{
+                padding: 20px;
+                border: 1px solid slateblue;
+            }
+
+            /* clearfix */
+            .floatImage::after {
+                content: '';
+                clear:both;
+                display: table;
+
+            }
+
+            .floatImage img{
+                width: 200px;
+                float: left;
+            }
+
+            .divFloat{
+                background-color: aquamarine;
+                width: 33.3333%;
+                height: 200px;
+                float: left;
+            }
+
+            .float2{background-color:black;}
+        </style>
+    </head>
+
+    <body>
+        <div class="floatImage">
+        <img src="https://wholeandheavenlyoven.com/wp-content/uploads/2016/07/Caramelized-Banana-Peach-Granola-Yogurt-Bowls6.jpg" alt="Caramelized Banana" width="250">
+ <p>Labrador Retrievers are friendly, outgoing dogs who love people and water. Known for their loyalty and trainability, they’re excellent family pets, hunting companions, and service animals. Labs are high-energy dogs who thrive on play, exercise, and human interaction.</p>
+    </div>
+
+    <div class="divFloat"></div>
+    <div class="divFloatfloat2"></div>
+    <div class="divFloat"></div>
+
+
+
+    </body>
+</html>

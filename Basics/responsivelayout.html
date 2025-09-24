@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Layout</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin: 0;
+    }
+
+    header {
+      background-color: aqua;
+      padding: 60px; /* fixed typo here */
+      color: black;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: antiquewhite;
+      flex-wrap: wrap;
+      padding: 10px 0;
+    }
+
+    nav a {
+      padding: 14px 20px;
+      background-color: gold;
+      text-decoration: none;
+      text-align: center;
+      color: black;
+      margin: 4px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: orange;
+    }
+
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    aside {
+      flex: 30%;
+      min-width: 250px;
+      background-color: #f0f0f0;
+      padding: 15px;
+      border-radius: 6px;
+    }
+
+    main {
+      flex: 70%;
+      min-width: 300px;
+      padding: 15px;
+    }
+
+    .fake_image {
+      background-color: #ccc;
+      height: 150px;
+      margin: 10px 0;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #555;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+   @media screen and (max-width) 
+  
+
+  
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Responsive Layout</h1>
+    <p>THIS PAGE WILL RESIZE YOUR BROWSER, SEE IT RESPOND!</p>
+  </header>
+
+  <nav>
+    <a href="#">LINK</a>
+    <a href="#">LINK</a>
+    <a href="#">LINK</a>
+    <a href="#">LINK</a>
+  </nav>
+
+  <div class="flex">
+    <aside>
+      <h2>About me</h2>
+      <h5>Photo of me</h5>
+      <div class="fake_image">Image</div>
+      <div class="fake_image" style="height:200px">IMAGE</div>
+      <p>
+        BGFUDRTFUYG IHJLK; JHGFCDTF YGIUHOJK MNKJBHGVU FCTYDRE DFRTYGUHOIJPIHUYGTF
+        D56F7GY89HU
+      </p>
+
+      <h3>Sub Header</h3>
+      <p>
+        zexrcgvhbvg edrftyguh exrdctfvygbuh sedrftyg sw4edrtfyguh sedrtfygu
+        aw5s4ed6rft7gy rxdtcfyugvihbojnhi s4ed5rft7ygu s4d5r6ft7gy s345d6fg
+      </p>
+
+      <div class="fake_image">Image</div>
+      <div class="fake_image">Image</div>
+      <div class="fake_image">Image</div>
+    </aside>
+
+    <main>
+      <div class="heading-row">
+        <h2>Title Heading</h2>
+        <h5>Title Description <span>September 11th, 2025</span></h5>
+      </div>
+
+      <div class="fake_image">Image</div>
+
+      <p>
+        dtuyjfghvkjblgku ferwiuphheguduphiuioyfuitdhgfkguhogyiuft trtuydrfghuhytyirtudyrhf
+        utdyrfghuiturtydhfgxcvjguitiur yuitryudfgchvjuityriuydf rytdugfxchvuytiruetdy
+      </p>
+
+      <p>
+        dtuyjfghvkjblgku ferwiuphheguduphiuioyfuitdhgfkguhogyiuft trtuydrfghuhytyirtudyrhf
+        utdyrfghuiturtydhfgxcvjguitiur yuitryudfgchvjuityriuydf rytdugfxchvuytiruetdy
+      </p>
+
+      <p>
+        dtuyjfghvkjblgku ferwiuphheguduphiuioyfuitdhgfkguhogyiuft trtuydrfghuhytyirtudyrhf
+        utdyrfghuiturtydhfgxcvjguitiur yuitryudfgchvjuityriuydf rytdugfxchvuytiruetdy
+      </p>
+    </main>
+  </div>
+
+  <footer>
+    <h3>THIS IS MY FOOT</h3>
+  </footer>
+</body>
+</html>
