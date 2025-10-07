@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+
+
+  <style>
+
+    *{box-sizing: border-box;}
+
+    body{
+      font-size: 15px;
+      font-family:"Lexend Deca", sans-serif
+    }
+
+    h2{
+      font-family: "Big Shoulders", sans-serif;
+      text-transform: uppercase;
+      color: hsl(0, 0%, 95%);
+      font-size: 2.5rem;
+
+    }
+  
+  p{
+    line-height: 1.7em;
+    margin-bottom: 100px;
+  }
+
+.container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.card{
+  color:hsla(0, 0%, 100%, 0.75);
+  width: 305px;
+  padding: 50px;
+}
+
+.card a{
+    background-color: hsl(0, 0%, 95%) ;
+    padding: 12px 32px;
+    border: 2px solid  hsl(0, 0%, 95%);
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.card a:hover{
+  background-color: transparent;
+  color: hsl(0, 0%, 95%)
+}
+.sedan{ background-color: hsl(31, 77%, 52%); border-top-left-radius: 8px;}
+.SUV{background-color:hsl(184, 100%, 22%) ;}
+.Luxury{background-color:hsl(179, 100%, 13%) ; border-top-right-radius: 8px; border-bottom-right-radius: 8px;}
+
+.sedan a{ color: hsl(31, 77%, 52%);}
+.SUV a{ color: hsl(184, 100%, 22%);}
+.Luxury a{ color: hsl(179, 100%, 13%);}
+
+
+
+    
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+  @media screen and(max-width:900px) {
+    .container { flex-direction: column;}
+    .sedan{border-bottom-left-radius: 0; border-top-right-radius: 8px;}
+    .Luxury{ border-top-right-radius: 8px; border-bottom-left-radius:0 }  ;
+    
+  }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+  <div class="card sedan">
+    <img src="images/icon-sedans.svg" alt="Sedans Icon">
+
+    <h2> Sedans</h2>
+  
+  <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+  or on your next road trip. </p>
+  <a href="#"> LEARN MORE</a>
+  </div>
+
+  <div class="card SUV">
+    
+   <img src="images/icon-suvs.svg" alt="SUV Icon">
+<h2> SUV's</h2>
+
+ <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+  and off-road adventures. </p>
+  <a href="#"> LEARN MORE</a>
+  </div>
+
+
+
+
+   <div class="card Luxury">
+    <img src="images/icon-luxury.svg" alt="Luxury Icon">
+  <h2> Luxury </h2>
+
+  <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+  rental and arrive in style. </p>
+  <a href="#"> LEARN MORE </a>
+  <div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://wwfrontendmentor"
+   
+  </div>
+</body>
+</html>
