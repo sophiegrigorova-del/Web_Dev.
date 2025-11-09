@@ -1,27 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Dev Homepage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sophie Grigorova - Web Dev</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f8;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      background-color: rgb(160, 140, 251);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+      width: 100%;
+    }
+
+    header h1 {
+      margin-bottom: 15px;
+    }
+
+    header p {
+      width: 700px;
+      margin: 0 auto 20px auto;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid white;
+      padding: 8px 16px;
+      border-radius: 20px;
+    }
+
+    header a:hover {
+      background-color: white;
+      color: rgb(160, 140, 251);
+    }
+
+    nav {
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: rgb(102, 81, 220);
+      font-weight: bold;
+      margin: 0 15px;
+    }
+
+    .textbox {
+      background-color: rgb(102, 81, 220);
+      color: white;
+      padding: 30px 50px;
+      border-radius: 12px;
+      text-align: center;
+      margin-top: 50px;
+      width: fit-content;
+    }
+
+    .cards-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 45px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: white;
+      width: 250px;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .card h3 {
+      color: rgb(102, 81, 220);
+      margin-bottom: 35px;
+    }
+
+    .card p {
+      margin-bottom: 30px;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: rgb(102, 81, 220);
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 50px;
+      background-color: rgb(160, 140, 251);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
-    <header> 
-      <h2> Sophie Grigorova's Web Dev Portfolio </h2>
-      <p> 
-My learning journey in web development has been exciting and full of growth. I started with little knowledge, but as I explored HTML and CSS. I began to understand how websites truly work. Each project I build boosts my confidence and motivates me to keep learning and improving my skills.</p>
-    </header>
 
-<nav>
-    <a href="">Class Projects </a>
-    <a href="">FrontendMentor Projects</a>
-    <a href="">Contact/About </a>
-</nav>
+  <header>
+    <h1>Sophie Grigorova</h1>
+    <p>My web development journey began with simple curiosity about how websites are built, and it quickly turned into a real passion. Learning HTML and CSS helped me see how creativity and logic come together to create something interactive and meaningful. With each project, I’ve gained more confidence, discovered new ways to problem-solve, and learned that there’s always more to explore. What started as a small interest has grown into a path I’m truly excited to keep following.</p>
+    <a href="https://github.com/sophiegrigorova-del/Web_Dev" target="_blank">About Me</a>
+  </header>
 
-<section> 
-    <h4> My Perfect Meal</h4>
-    <p> Demonstrated basic HTML structure and text formatting, along with the ability to learn to add pictures.</p>
-    <a
-</section>
+  <nav>
+    <a href="#class-projects">Class Projects</a> 
+    <a href="#frontend-projects">FrontendMentor Projects</a> 
+    <a href="#contact">Contact/About</a>
+  </nav>
+
+
+  <div class="textbox" id="class-projects">
+    <h2>Class Projects</h2>
+  </div>
+
+  <div class="cards-container">
+    <div class="card">
+      <h3>Vacation</h3>
+      <p>Demonstrated basic HTML structure and formatting while creating a themed travel page.</p>
+      <a href="file:///Users/sophiegrigorova/Documents/GitHub/Web_Dev./vacation/vacation.html/vacation.html">View Project</a>
+    </div>
+
+    <div class="card">
+      <h3>Perfect Meal</h3>
+      <p>Showcased use of semantic HTML and styled layout elements using CSS.</p>
+      <a href="file:///Users/sophiegrigorova/Documents/GitHub/Web_Dev./Basics/myperfectmeal.html">View Project</a>
+    </div>
+
+    <div class="card">
+      <h3>Wireframe</h3>
+      <p>Practiced design planning through a structured HTML wireframe with simple layout styling.</p>
+      <a href="file:///Users/sophiegrigorova/Documents/GitHub/Web_Dev./wiresframes1/dogs.html">View Project</a>
+    </div>
+  </div>
+
+
+  <div class="textbox" id="frontend-projects">
+    <h2>FrontendMentor Projects</h2>
+  </div>
+
+  <div class="cards-container">
+    <div class="card">
+      <h3>Three Column Layout</h3>
+      <p>Practiced the use of advanced CSS formatting and column layouts.</p>
+      <a href="file:///Users/sophiegrigorova/Documents/GitHub/Web_Dev./Frontendmentor/three_column_layout/index.html">View Project</a>
+    </div>
+
+    <div class="card">
+      <h3>Social Links Profile</h3>
+      <p>Practiced the use of CSS formatting and card layouts.</p>
+      <a href="file:///Users/sophiegrigorova/Documents/GitHub/Web_Dev./Frontendmentor/social_links_profile/index.html">View Project</a>
+    </div>
+  </div>
+
+  <footer id="contact">
+    <p>Contact: grigorova775@gmail.com</p>
+  </footer>
+
 </body>
 </html>
