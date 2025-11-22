@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recipe Page</title>
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5e9dd;
+    color: #2e2e2e;
+}
+
+header {
+    width: 100%;
+    background: linear-gradient(to right, rgb(13, 41, 95), rgb(32, 72, 150));
+    color: white;
+    padding: 100px 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 80px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cards {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.recipecard {
+    background-color: white;
+    border-radius: 18px;
+    width: 420px;
+    padding: 25px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.recipecard img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+h2, h3, .Ingredients, .Instructions {
+    font-family: "Young Serif";
+    color: #7b3f00;
+}
+
+p {
+    line-height: 1.5;
+    color: #555;
+}
+
+blockquote {
+    background-color: #fdefff; 
+    border-left: 5px solid hsl(332, 51%, 32%);
+    padding: 12px 18px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-style: normal;
+    width: fit-content;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+footer {
+    margin-top: 50px;
+    background: linear-gradient(to right, rgb(13, 41, 95), rgb(32, 72, 150));
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 22px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Thanksgiving!</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipepage.html">Recipes</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="countries.html">Countries</a></li>
+            <li><a href="fooddrive.html">Food Drive</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+<div class="cards">
+
+    <article class="recipecard">
+        <img src="img/apple.jpeg" alt="Apple Pie">
+        <h2>Classic Apple Pie</h2>
+        <p>A warm and comforting Thanksgiving favorite made with spiced apples baked inside a golden, flaky crust.</p>
+
+        <h3>Preparation Time</h3>
+        <blockquote><strong>Total:</strong> 1 hour 15 minutes</blockquote>
+        <blockquote><strong>Preparation:</strong> 30 minutes</blockquote>
+        <blockquote><strong>Cooking:</strong> 45 minutes</blockquote>
+
+        <h3>Ingredients</h3>
+        <ul>
+            <li>6–7 cups sliced apples</li>
+            <li>3/4 cup sugar</li>
+            <li>2 tbsp flour</li>
+            <li>1 tsp cinnamon</li>
+            <li>1/4 tsp nutmeg</li>
+            <li>1 tbsp lemon juice</li>
+            <li>2 tbsp butter</li>
+            <li>1 double pie crust</li>
+        </ul>
+
+        <h3>Instructions</h3>
+        <ol>
+            <li>Mix apples with sugar, flour, cinnamon, nutmeg, and lemon juice.</li>
+            <li>Place mixture in pie crust and dot with butter.</li>
+            <li>Add top crust, seal edges, and cut vents.</li>
+            <li>Bake at 425°F for 45 minutes.</li>
+            <li>Let cool before slicing.</li>
+        </ol>
+    </article>
+
+    <article class="recipecard">
+        <img src="img/sweet.jpeg" alt="Sweet Potato Casserole">
+        <h2>Sweet Potato Casserole</h2>
+        <p>A creamy, rich, and sweet Thanksgiving side dish topped with buttery pecans or fluffy marshmallows.</p>
+
+        <h3>Preparation Time</h3>
+        <blockquote><strong>Total:</strong> 55 minutes</blockquote>
+        <blockquote><strong>Preparation:</strong> 20 minutes</blockquote>
+        <blockquote><strong>Cooking:</strong> 35 minutes</blockquote>
+
+        <h3>Ingredients</h3>
+        <ul>
+            <li>4 cups mashed sweet potatoes</li>
+            <li>1/2 cup brown sugar</li>
+            <li>1/3 cup melted butter</li>
+            <li>1/2 cup milk</li>
+            <li>1 tsp vanilla extract</li>
+            <li>2 eggs, beaten</li>
+            <li>1 cup mini marshmallows</li>
+            <li>1 cup chopped pecans mixed with brown sugar + butter</li>
+        </ul>
+
+        <h3>Instructions</h3>
+        <ol>
+            <li>Mix all ingredients until smooth.</li>
+            <li>Spread mixture in greased baking dish.</li>
+            <li>Add pecans or marshmallows on top.</li>
+            <li>Bake at 350°F for 30–35 minutes.</li>
+            <li>Let cool slightly before serving.</li>
+        </ol>
+    </article>
+
+</div>
+</main>
+
+<footer>
+    Contact: grigorova775@gmail.com
+</footer>
+
+</body>
+</html>
