@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thanksgiving Around the World</title>
+<style>
+    body{
+         margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f5e9dd;
+        color: #2e2e2e;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+  
+    header {
+        width: 100%;
+        background: linear-gradient(to right, rgb(13, 41, 95), rgb(32, 72, 150));
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 100px 50px; 
+        box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        flex-wrap: wrap;
+    }
+
+    header h1 {
+        font-size: 60px;
+        margin: 0;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    header nav ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+
+    main {
+        width: 90%;
+        max-width: 1200px;
+        margin: 40px auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .country-card {
+        background-color: white;
+        border-radius: 18px;
+        width: 300px;
+        box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .country-card img.flag {
+        width: 50px;
+        height: 30px;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+
+    .country-card h2 {
+        color: #7b3f00;
+        margin: 15px 0 10px 0;
+        font-size: 24px;
+        font-family: "Young Serif";
+    }
+
+    .country-card p {
+        padding: 0 15px 15px 15px;
+        color: #555;
+        font-size: 16px;
+    }
+
+    .country-card img.celebration {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    footer {
+        margin-top: 50px;
+        background: linear-gradient(to right, rgb(13, 41, 95), rgb(32, 72, 150));
+        color: white;
+        text-align: center;
+        padding: 25px;
+        font-size: 22px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        width: 100%;
+    }
+
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Thanksgiving!</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="countries.html">Countries</a></li>
+            <li><a href="fooddrive.html">Food Drive</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <article class="country-card">
+        <img src="img/usa.jpeg" alt="USA Flag" class="flag">
+        <h2>United States</h2>
+        <p>Celebrated on the fourth Thursday of November. Families gather for large meals, watch parades and football, and often volunteer in communities.</p>
+        <img src="img/usath.jpeg" alt="USA Thanksgiving Celebration" class="celebration">
+    </article>
+
+    <article class="country-card">
+        <img src="img/canada.png" alt="Canada Flag" class="flag">
+        <h2>Canada</h2>
+        <p>Celebrated on the second Monday of October. Families enjoy harvest meals with turkey, pumpkin pies, and giving thanks for a bountiful harvest.</p>
+        <img src="img/canadath.jpeg" alt="Canada Thanksgiving Celebration" class="celebration">
+    </article>
+
+    <article class="country-card">
+        <img src="img/lib.png" alt="Liberia Flag" class="flag">
+        <h2>Liberia</h2>
+        <p>Observed on the first Thursday of November. Brought by freed African Americans, including church services, family meals, and American-style celebrations.</p>
+        <img src="img/libth.jpeg" alt="Liberia Thanksgiving Celebration" class="celebration">
+    </article>
+
+    <article class="country-card">
+        <img src="img/grenada.png" alt="Grenada Flag" class="flag">
+        <h2>Grenada</h2>
+        <p>Celebrated in October to mark the U.S.-led invasion anniversary. Includes parades, cultural events, and family meals.</p>
+        <img src="img/greadath.jpeg" alt="Grenada Thanksgiving Celebration" class="celebration">
+    </article>
+
+    <article class="country-card">
+        <img src="img/nor.png" alt="Norfolk Island Flag" class="flag">
+        <h2>Norfolk Island</h2>
+        <p>Celebrated on the last Wednesday of November. Includes church services, community feasts, and cultural performances.</p>
+        <img src="img/north.jpeg" alt="Norfolk Island Thanksgiving Celebration" class="celebration">
+    </article>
+</main>
+
+<footer>
+    Contact: grigorova775@gmail.com
+</footer>
+
+</body>
+</html>
