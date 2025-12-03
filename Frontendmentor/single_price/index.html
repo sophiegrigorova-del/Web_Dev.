@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Single Price Grid Component</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+  <style>
+  
+    body {
+      font-family: "Karla",sans-serif;
+      background: #f2f4f7;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      border-radius: 20px;
+    }
+
+    main {
+      max-width: 800px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.2);
+      overflow: hidden;
+    }
+
+    .join {
+      padding: 30px;
+    }
+
+    .join h1 {
+      color: hsl(179, 62%, 43%);
+      margin-bottom: 10px;
+    }
+
+    .join h3 {
+      color: hsl(71, 73%, 54%);
+      margin-bottom: 10px;
+    }
+
+    .join h4 {
+      color: hsl(218, 22%, 67%);
+      font-weight: normal;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .bottom {
+      display: flex;
+      
+    }
+
+    .left {
+      background-color: hsl(179, 62%, 43%);
+      padding: 30px;
+      color: white;
+      flex: 1;
+    }
+
+    .left h2 {
+      margin-top: 0;
+    }
+
+    .left h3 {
+      color: white;
+    }
+
+    
+    .offer {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin: 10px 0;
+    }
+
+    .offer h3,
+    .offer p {
+      margin: 0;
+    }
+
+    .offer h3 {
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    .offer p {
+      color:  hsl(179, 62%, 65%);
+      font-size: 16px;
+
+    }
+
+    .signup-btn {
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+      background: hsl(71, 73%, 54%);
+      border: none;
+      padding: 15px;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      font-size: 18px;
+      
+    }
+
+    .signup-btn:hover {
+      background: hsl(71, 73%, 48%);
+    }
+
+    .right {
+      background-color: hsl(179, 47%, 52%);
+      padding: 30px;
+      color: white;
+      flex: 1;
+    }
+
+    .right h2 {
+      margin-top: 0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      color: hsl(204, 43%, 93%);
+      line-height: 1.8;
+      color: hsl(179, 62%, 75%);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .attribution {
+      font-size: 11px;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    @media screen and (max-width: 700px) {
+      .bottom { flex-direction:column; }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="join">
+      <h1>Join our community</h1>
+      <h3>30-day, hassle-free money back guarantee</h3>
+      <h4>
+        Gain access to our full library of tutorials along with expert code reviews. 
+        Perfect for any developers who are serious about honing their skills.
+      </h4>
+    </section>
+
+    <section class="bottom">
+      <div class="left">
+        <h2>Monthly Subscription</h2>
+
+        <div class="offer">
+          <h3>&dollar;29</h3>
+          <p>per month</p>
+        </div>
+
+        <p>Full access for less than &dollar;1 a day</p>
+        <button class="signup-btn">Sign Up</button>
+      </div>
+
+      <div class="right">
+        <h2>Why Us</h2>
+        <ul>
+          <li>Tutorials by industry experts</li>
+          <li>Peer &amp; expert code review</li> 
+          <li>Coding exercises</li>
+          <li>Access to our GitHub repos</li> 
+          <li>Community forum</li>
+          <li>Flashcard decks</li>  
+          <li>New videos every week</li> 
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Sophie Grigorova</a>.
+    </p>
+  </footer>
+</body>
+</html>
